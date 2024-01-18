@@ -1,0 +1,25 @@
+.header {
+    border-bottom: 0.1rem solid lightgrey;
+}
+
+.logo, .name, .search {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.logo {
+    width: 2rem;
+    margin: 0.1rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-family:Georgia;
+}
+
+.search {
+    width: 15rem;
+    height: 2rem;
+    float: right;
+}
