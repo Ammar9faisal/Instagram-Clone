@@ -15,16 +15,19 @@ const Home = () => {
         .then(data => setOtherData(data));
     },[])
 
+    let image = otherData; //allows second array mapping
+
     return (
         <div>{
-            posts.map(post => (
-                otherData.map(image =>( 
+            posts.map((post ,index) => ( //used index to display image related to post
                 <div className="post">
                     <img src={post.picture.thumbnail} className="pfp"></img>
                     <h2 className="Name">{post.name.first} {post.name.last}</h2>
-                    <img src={image.urls.regular}></img>
+                    <img className="image" src={image[index].urls.regular}></img>
+                    <h4 className="bottom-name">{post.name.first} {post.name.last} <p className="description">{image[index].alt_description}</p></h4>
+                    <h4 className="comments">View All {Math.ceil(Math.random()*10)} comments</h4>
                 </div>
-            ))))
+            ))
             }
         </div>
     )

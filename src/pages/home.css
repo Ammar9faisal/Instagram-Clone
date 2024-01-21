@@ -1,13 +1,13 @@
+
 .Name {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     padding-left: 10px;
     
 }
-.post{
+.post {
     border: 1px solid lightgrey;
     max-width: 500px;
-    margin: 1rem auto
+    margin: 1rem auto;
 }
 
 .pfp {
@@ -21,3 +21,20 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+.image {
+    max-width: 500px;
+}
+
+.bottom-name, .comments, .description {
+    margin: 2px 4px;
+}
+
+.bottom-name, .description {
+    display: inline;
+}
+.description {
+    color: black;
+    font-weight: 100;
+}
+
